@@ -127,41 +127,7 @@ function App() {
           </section>
         </main>
       ) : (
-        <main className="application-page">
-          <div className="application-header">
-            <p className="eyebrow">SLIPS ADMISSIONS</p>
-            <h1>Start Your Application</h1>
-            <p>
-              Complete your application to begin your journey with SUPDA
-              Liberia Institute of Professional Studies.
-            </p>
-          </div>
-
-          <div className="application-box">
-            <div className="notice">
-              <strong>Application Portal</strong>
-              <p>
-                Your application will be reviewed by the SLIPS admissions
-                team before a student account is created.
-              </p>
-            </div>
-
-            <div className="form-placeholder">
-              <h2>Application Form Coming Next</h2>
-              <p>
-                We are now connecting this page to the SLIPS application
-                database in Supabase.
-              </p>
-
-              <button
-                className="primary-button"
-                onClick={() => setShowApplication(false)}
-              >
-                Back to Portal
-              </button>
-            </div>
-          </div>
-        </main>
+        <ApplicationForm onBack={() => setShowApplication(false)} />
       )}
 
       <footer>
