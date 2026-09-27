@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "./supabase";
 
 const programs = [
   "Professional Certificate in Leadership & Personal Development",
